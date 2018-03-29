@@ -18,7 +18,7 @@ public class Cliente {
 
     public static void main(String[] args) {
         try {
-            Remoto contract = (Remoto) LocateRegistry.getRegistry("no1", 1098).lookup("rmi:/no1");
+            Remoto contract = (Remoto) LocateRegistry.getRegistry("no1", 1099).lookup("rmi:/no1");
             int result = contract.operacao2(2, 4);
             System.out.println("TETANDO RESULTADO");
             System.out.println(result);

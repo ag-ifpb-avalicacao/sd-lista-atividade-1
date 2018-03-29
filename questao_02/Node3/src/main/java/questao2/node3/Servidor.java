@@ -17,7 +17,7 @@ import java.rmi.registry.Registry;
 public class Servidor {
     public static void main(String[] args) throws NotBoundException {
         try {
-            Registry reg = LocateRegistry.createRegistry(1097);
+            Registry reg = LocateRegistry.createRegistry(1099);
             reg.rebind("rmi:/no3", new RemotoImpl());
         } catch (RemoteException ex) {
             System.out.println("Erro de acesso remoto");

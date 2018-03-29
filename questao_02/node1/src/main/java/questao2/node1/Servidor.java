@@ -17,7 +17,7 @@ public class Servidor {
     
     public static void main(String[] args) {
         try {
-            Registry reg = LocateRegistry.createRegistry(1098);
+            Registry reg = LocateRegistry.createRegistry(1099);
             reg.rebind("rmi:/no1", new RemotoImpl());
         } catch (RemoteException ex) {
             System.out.println("Erro de acesso remoto");
